@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profs"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/PINCODE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="41dp"
+        android:text="PIN Code:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/chdist"
+        app:layout_constraintEnd_toStartOf="@+id/pincode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/roundedbutton"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/prof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PINCODE"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prof"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="sans-serif"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dislist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pincode" />
+
+    <!--<ListView-->
+    <!--android:id="@+id/dislist"-->
+    <!--android:layout_width="352dp"-->
+    <!--android:layout_height="123dp"-->
+    <!--tools:layout_editor_absoluteX="16dp"-->
+    <!--tools:layout_editor_absoluteY="322dp" />-->
+
+    <TextView
+        android:id="@+id/chdist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="271dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="16dp"
+        android:text="Choose Distributor:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dislist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PINCODE" />
+
+    <Spinner
+        android:id="@+id/dislist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chdist"
+        app:layout_constraintTop_toBottomOf="@+id/prof" />
+
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:ems="10"
+        android:hint="Enter your feedback here"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislist" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/selectedbutton"
+        android:text="Submit"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback" />
+
+</android.support.constraint.ConstraintLayout>

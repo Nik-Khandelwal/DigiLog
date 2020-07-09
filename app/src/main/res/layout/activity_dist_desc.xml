@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeNew">
+    tools:context=".DistDesc">
+
+    <TextView
+        android:id="@+id/distprof"
+        android:layout_width="288dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:text="DISTRIBUTORS PROFILE"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/roundedbutton"
+        android:ems="10"
+        android:hint="000000"
+        android:inputType="number"
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/existprof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/newprof"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginStart="34dp"
+        android:background="@drawable/selectedbutton"
+        android:text="New Profile"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/existprof"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/existprof"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/selectedbutton"
+        android:text="Existing Profile"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newprof"
+        app:layout_constraintTop_toBottomOf="@+id/pin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="18dp"
+        android:text="Enter PIN Code here:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distprof" />
+
+
+</android.support.constraint.ConstraintLayout>

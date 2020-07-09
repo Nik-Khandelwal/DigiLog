@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Specific">
+
+    <!--android:fadeScrollbars="true"-->
+    <!--android:isScrollContainer="true"-->
+    <!---->
+    <!--tools:layout_editor_absoluteY="81dp">-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/usp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodno"
+        />
+
+    <TextView
+        android:id="@+id/showdesc"
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/desp"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:scrollbarDefaultDelayBeforeFade="1"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desp" />
+
+    <TextView
+        android:id="@+id/desp"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/showusp"
+        android:autoSizeMaxTextSize="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif"
+        android:freezesText="true"
+        android:text="Description:"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showdesc"
+        app:layout_constraintStart_toStartOf="@+id/showusp"
+        app:layout_constraintTop_toBottomOf="@+id/showusp" />
+
+    <TextView
+        android:id="@+id/showusp"
+        android:layout_width="346dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usp"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/desp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usp" />
+
+    <TextView
+        android:id="@+id/usp"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:fontFamily="sans-serif"
+        android:text="USP:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showusp"
+        app:layout_constraintStart_toStartOf="@+id/showusp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/prodno"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:singleLine="false"
+        android:text="iheruhg"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-66dp"
+        android:layout_marginStart="0dp"
+        android:text="prodname"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodno" />
+
+</RelativeLayout>
